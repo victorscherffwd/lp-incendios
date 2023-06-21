@@ -1,0 +1,66 @@
+.beneficios{
+    padding: 24px 0;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            font-size: 24px;
+            text-align: center;
+            color: white;
+            margin-bottom: 24px;
+        }
+
+        p{
+            text-align: center;
+            color: rgba(255, 255, 255, 0.809);
+        }
+
+        .cards-wrapper{
+            display: flex;
+            flex-direction: column;
+            margin-top: 48px;
+            row-gap: 32px;
+
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 12px;
+                background: white;
+                padding: 32px;
+                border-radius: 15px;
+
+                p{
+                    width: 120px;
+                    color: #232323;
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 1024px) {
+        padding: 48px 0;
+
+        .container{
+            h2{
+                font-size: 36px;
+            }
+    
+            p{
+                font-size: 20px;
+                width: 750px;
+            }
+
+
+            .cards-wrapper{
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+    }
+}

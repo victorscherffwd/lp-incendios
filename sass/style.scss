@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.button{
+    background: #00A335 !important;
+    border-radius: 50px !important;
+    border: none !important;
+    color: white !important;
+    text-decoration: none !important;
+    display: block;
+    padding: 10px;
+    margin: 0;
+    padding: 12px 24px;
+    cursor: pointer;
+
+    @media (min-width:1024px) {
+        font-size: 24px;
+        border-radius: 50px !important;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+
+    @media (min-width:1024px) {
+        max-width: 1200px;
+        padding: 36px;
+    }
+
+    @media (min-width:1600px) {
+        padding: 50px 0 !important;
+    }
+}
+
+h1, h2, h3, h4{
+    line-height: 1.3em;
+}
+
+p{
+    line-height: 1.24em;
+}
+
+section{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.card{
+    border: none !important;
+    overflow: initial
+}
+
+@import './hero';
+@import './video';
+@import './banners';
+@import './necessidades';
+@import './funcionalidades';
+@import'./beneficios';
+@import './form';
+@import './modal';

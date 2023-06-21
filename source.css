@@ -1,0 +1,692 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.button {
+  background: #00A335 !important;
+  border-radius: 50px !important;
+  border: none !important;
+  color: white !important;
+  text-decoration: none !important;
+  display: block;
+  padding: 10px;
+  margin: 0;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .button {
+    font-size: 24px;
+    border-radius: 50px !important;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    padding: 36px;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    padding: 50px 0 !important;
+  }
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.3em;
+}
+
+p {
+  line-height: 1.24em;
+}
+
+section {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.card {
+  border: none !important;
+  overflow: initial;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background-color: #1A1A1A;
+}
+.hero h1 {
+  color: #232323;
+  text-align: center;
+  font-size: 32px;
+}
+.hero p {
+  color: #232323;
+  text-align: center;
+  font-size: 18px;
+}
+.hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.hero .arrow {
+  width: 30px;
+}
+@media (min-width: 1024px) {
+  .hero {
+    height: auto;
+  }
+  .hero .container {
+    position: relative;
+  }
+  .hero h1 {
+    font-size: 36px;
+    width: 80%;
+    max-width: 1000px;
+  }
+  .hero p {
+    font-size: 24px;
+  }
+}
+.video {
+  background-image: url("https://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-05/video-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.video .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 0;
+}
+.video .container iframe {
+  width: 317px;
+  height: 178px;
+}
+@media (min-width: 414px) {
+  .video iframe {
+    width: 350px;
+    height: 196px;
+  }
+}
+@media (min-width: 768px) {
+  .video .container iframe {
+    width: 706px;
+    height: 394px;
+  }
+}
+@media (min-width: 1024px) {
+  .video .container iframe {
+    width: 1000px;
+    height: 558px;
+  }
+}
+@media (min-width: 1300px) {
+  .video .container iframe {
+    width: 1280px;
+    height: 714px;
+  }
+}
+
+.banners-wrapper {
+  background-image: url("https://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-05/banners-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .banners-wrapper {
+    max-width: 1600px;
+  }
+}
+
+.banners {
+  background-color: transparent;
+}
+.banners .container {
+  padding: 70px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 48px;
+}
+.banners .container .banner {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  row-gap: 24px;
+}
+.banners .container .banner .banner-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.banners .container .banner .banner-info h2 {
+  text-align: center;
+  font-weight: 400;
+  color: white;
+}
+.banners .container .banner .banner-info p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+.banners .container .banner .banner-info a {
+  color: #00A335;
+  text-decoration: none;
+}
+.banners .container .banner .banner-info .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  background: linear-gradient(180deg, #00A335 -19%, rgba(0, 163, 53, 0) 127.5%) !important;
+}
+.banners .container .banner .banner-image img {
+  box-shadow: 0px 9px 33px rgba(94, 94, 94, 0.15);
+  border-radius: 16px;
+}
+@media (min-width: 1024px) {
+  .banners .container {
+    background: none;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding: 48px 36px;
+  }
+  .banners .container .banner {
+    flex-direction: row;
+    column-gap: 60px;
+    padding: 24px 0;
+    align-items: center;
+  }
+  .banners .container .banner .banner-info {
+    width: 55%;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 24px;
+  }
+  .banners .container .banner .banner-info h2 {
+    font-size: 32px;
+    width: 550px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .banners .container .banner .banner-info p {
+    font-size: 22px;
+    text-align: left;
+  }
+  .banners .container .banner .banner-image {
+    width: 45%;
+  }
+  .banners .container .banner.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.necessidades .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.necessidades .container h2 {
+  font-size: 24px;
+  color: #232323;
+  text-align: center;
+}
+.necessidades .container h2 span {
+  color: #48A054;
+}
+.necessidades .container .necessidades-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  row-gap: 24px;
+  margin-top: 48px;
+}
+.necessidades .container .necessidades-wrapper .necessidades-col {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 24px;
+}
+.necessidades .container .necessidades-wrapper .necessidades-col .necessidades-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #C4C4C4;
+  height: 90px;
+  cursor: pointer;
+}
+.necessidades .container .necessidades-wrapper .necessidades-col .necessidades-tile .icon {
+  height: 60px;
+}
+.necessidades .container .necessidades-wrapper .necessidades-col .necessidades-tile p {
+  text-align: center;
+  max-width: 50%;
+  color: rgba(35, 35, 35, 0.6);
+}
+.necessidades .container .necessidades-wrapper .necessidades-col .necessidades-tile .plus-icon {
+  padding-left: 53px;
+}
+@media (min-width: 1024px) {
+  .necessidades .container h2 {
+    font-size: 36px;
+  }
+  .necessidades .container .necessidades-wrapper {
+    flex-direction: row;
+    column-gap: 64px;
+  }
+  .necessidades .container .necessidades-wrapper .necessidades-col {
+    width: 50%;
+  }
+  .necessidades .container .necessidades-wrapper .necessidades-col .necessidades-tile p {
+    width: 120px;
+    text-align: center;
+  }
+}
+
+.informacoes-background {
+  background-image: url("https://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-05/informacoes-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .informacoes-background {
+    max-width: 1600px;
+  }
+}
+
+.funcionalidades {
+  padding: 24px 0;
+}
+.funcionalidades .container h2 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+.funcionalidades .container .cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-top: 40px;
+}
+.funcionalidades .container .cards-wrapper .card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.funcionalidades .container .cards-wrapper .card .info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(263.41deg, rgba(35, 35, 35, 0.2) 9.54%, rgba(35, 35, 35, 0.2) 99.54%);
+  backdrop-filter: blur(10.1696px);
+}
+.funcionalidades .container .cards-wrapper .card .info .info-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  text-decoration: none;
+}
+.funcionalidades .container .cards-wrapper .card .info .info-header p, .funcionalidades .container .cards-wrapper .card .info .info-header a {
+  color: white !important;
+  font-size: 18px !important;
+  margin: 0 !important;
+}
+.funcionalidades .container .cards-wrapper .card .info .info-header .btn {
+  border: none;
+  border-radius: 50%;
+  background-color: #00A335;
+  display: block;
+  width: 28px;
+  height: 28px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.funcionalidades .container .cards-wrapper .card .info .info-header .btn .vertical {
+  width: 14px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  pointer-events: none;
+}
+.funcionalidades .container .cards-wrapper .card .info .info-header .btn .horizontal {
+  width: 14px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  transform: rotate(90deg);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.funcionalidades .container .cards-wrapper .card:nth-child(1) {
+  background-image: url("https://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-05/exigencia-legal.png");
+}
+.funcionalidades .container .cards-wrapper .card:nth-child(2) {
+  background-image: url("https://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-05/responsabilidaes-do-sindico.png");
+}
+.funcionalidades .container .cards-wrapper .card:nth-child(3) {
+  background-image: url("https://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-05/protecao-da-vida-e-do-patrimonio.png");
+}
+.funcionalidades .container .cards-wrapper .card:nth-child(4) {
+  background-image: url("https://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-05/politica-comercial-definida.png");
+}
+@media (min-width: 1024px) {
+  .funcionalidades .container h2 {
+    text-align: center;
+    font-size: 48px;
+  }
+  .funcionalidades .container .cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 24px;
+  }
+  .funcionalidades .container .cards-wrapper .card {
+    height: 400px;
+  }
+  .funcionalidades .container .cards-wrapper .card .info {
+    height: 80px;
+  }
+  .funcionalidades .container .cards-wrapper .card .info .info-header p, .funcionalidades .container .cards-wrapper .card .info .info-header a {
+    font-size: 22px;
+  }
+}
+
+.beneficios {
+  padding: 24px 0;
+}
+.beneficios .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.beneficios .container h2 {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  margin-bottom: 24px;
+}
+.beneficios .container p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.809);
+}
+.beneficios .container .cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  row-gap: 32px;
+}
+.beneficios .container .cards-wrapper .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+  background: white;
+  padding: 32px;
+  border-radius: 15px;
+}
+.beneficios .container .cards-wrapper .card p {
+  width: 120px;
+  color: #232323;
+}
+@media (min-width: 1024px) {
+  .beneficios {
+    padding: 48px 0;
+  }
+  .beneficios .container h2 {
+    font-size: 36px;
+  }
+  .beneficios .container p {
+    font-size: 20px;
+    width: 750px;
+  }
+  .beneficios .container .cards-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.form {
+  background-color: #48A145;
+  padding: 24px 0;
+}
+.form .form-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.form .form-wrapper .form-img {
+  background-image: url("https://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-05/form-image-mob.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 24px;
+  row-gap: 12px;
+}
+.form .form-wrapper .form-img p {
+  color: white;
+}
+.form .form-wrapper .form-code {
+  background-color: white;
+  height: 500px;
+}
+@media (min-width: 1024px) {
+  .form .form-wrapper {
+    flex-direction: row;
+    height: 900px;
+  }
+  .form .form-wrapper .form-img {
+    width: 50%;
+    height: 100%;
+    background-image: url("https://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-05/form-image-desk_0.png");
+    background-position: 120 center;
+    row-gap: 24px;
+    justify-content: flex-end;
+    padding: 32px;
+  }
+  .form .form-wrapper .form-img p {
+    width: 300px;
+  }
+  .form .form-wrapper .form-code {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.modal-wrapper {
+  position: fixed;
+  z-index: 999;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.168627451);
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.modal-wrapper .modal {
+  background-color: white;
+  width: 90%;
+  height: auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  border-radius: 10px;
+  transform: scale(0);
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+.modal-wrapper .modal button {
+  padding: 8px;
+  align-self: flex-end;
+  border: none;
+  background-color: #F8E3E3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal-wrapper .modal .image-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.modal-wrapper .modal .image-wrapper img {
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.modal-wrapper .modal .image-wrapper .modal-text-wrapper {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.modal-wrapper .modal .image-wrapper .modal-text-wrapper h2 {
+  color: white;
+  font-size: 18px;
+}
+.modal-wrapper .modal .image-wrapper .modal-text-wrapper p {
+  color: white;
+  font-size: 13px;
+}
+.modal-wrapper .modal .info-wrapper h3 {
+  font-weight: 400;
+}
+.modal-wrapper .modal .info-wrapper h3 span {
+  color: #00A335;
+}
+.modal-wrapper .modal .info-wrapper .product-wrapper .product {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  padding: 20px 0;
+  align-items: center;
+  border-top: 1px solid #E3E6E8;
+}
+.modal-wrapper .modal .info-wrapper .product-wrapper .product:nth-of-type(3) {
+  border-bottom: 1px solid #E3E6E8;
+}
+.modal-wrapper .modal .info-wrapper .product-wrapper .product-info-wrapper .product-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+.modal-wrapper .modal .info-wrapper .product-wrapper .product-info-wrapper .product-description {
+  font-size: 12px;
+  color: #8B979F;
+}
+.modal-wrapper .modal .info-wrapper .product-wrapper .product-info-wrapper .product-link {
+  color: #00A335;
+}
+.modal-wrapper .modal .info-wrapper .button-orcamento {
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+  align-items: center;
+  width: 100%;
+  background-color: #00A335;
+  color: white;
+  border-radius: 5px;
+  padding: 12px 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .modal-wrapper .modal {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 24px;
+    position: relative;
+    padding: 24px;
+    width: 80%;
+    max-width: 1000px;
+  }
+  .modal-wrapper .modal button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  .modal-wrapper .modal .image-wrapper img {
+    height: 100%;
+  }
+  .modal-wrapper .modal .image-wrapper .modal-text-wrapper {
+    left: 36px;
+    bottom: 36px;
+    padding-right: 120px;
+  }
+  .modal-wrapper .modal .info-wrapper {
+    padding-top: 36px;
+    padding-right: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .modal-wrapper .modal .info-wrapper h3 {
+    font-size: 24px;
+  }
+  .modal-wrapper .modal .info-wrapper .product-wrapper .product {
+    padding: 12px 0;
+    grid-template-columns: 0.4fr 1.6fr;
+  }
+}
+
+/*# sourceMappingURL=source.css.map */

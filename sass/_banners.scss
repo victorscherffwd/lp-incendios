@@ -1,0 +1,116 @@
+.banners-wrapper{
+    background-image: url("https://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-05/banners-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+
+    @media (min-width: 1024px) {
+        max-width: 1600px;
+    }
+}
+
+.banners{
+    background-color: transparent;
+
+    .container{
+        padding: 70px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 48px;
+
+        .banner{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            row-gap: 24px;
+
+            .banner-info{
+                display: flex;
+                flex-direction: column;
+                row-gap: 12px;
+
+                h2{
+                    text-align: center;
+                    font-weight: 400;
+                    color: white;
+                }
+        
+                p{
+                    text-align: center;
+                    color:#FFFFFFCC;
+;
+                }
+
+                a{
+                    color: #00A335;
+                    text-decoration: none;
+                }
+
+                .button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 12px;
+                    background: linear-gradient(180deg, #00A335 -19%, rgba(0, 163, 53, 0) 127.5%) !important
+                }
+                
+            }
+
+            .banner-image{
+                img{
+                    box-shadow: 0px 9px 33px rgba(94, 94, 94, 0.15);
+                    border-radius: 16px;
+                }
+            }
+
+        }
+    }
+
+    @media (min-width:1024px) {
+
+        .container{
+            background: none;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100%;
+            padding: 48px 36px;
+
+            .banner{
+                flex-direction: row;
+                column-gap: 60px;
+                padding: 24px 0;
+                align-items: center;
+
+                .banner-info{
+                    width: 55%;
+                    justify-content: center;
+                    align-items: flex-start;
+                    row-gap: 24px;
+
+                    h2{
+                        font-size: 32px;
+                        width: 550px;
+                        text-align: left;
+                        font-weight: 600;
+                    }
+                    
+                    p{
+                        font-size: 22px;
+                        text-align: left;
+                    }
+                }
+
+                .banner-image{
+                    width: 45%;
+                }
+
+                &.reverse{
+                    flex-direction: row-reverse;
+                }
+            }
+
+        }
+    }
+}

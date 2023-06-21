@@ -1,0 +1,54 @@
+.video{
+    background-image: url('https://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-05/video-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 36px 0;
+
+        iframe{
+            width: 317px;
+            height: 178px;
+        }
+
+    }
+
+    @media (min-width: 414px) {
+        iframe{
+            width: 350px;
+            height: 196px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container{
+            iframe{
+                width: 706px;
+                height: 394px;
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container{
+            iframe{
+                width: 1000px;
+                height: 558px;
+            }
+        }
+    }
+
+    @media (min-width: 1300px) {
+        .container{
+            iframe{
+                width: 1280px;
+                height: 714px;
+            }
+        }
+    }
+}
